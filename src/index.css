@@ -492,7 +492,6 @@ ul {
   height: 48px;
 }
 .latest-post .post-content {
-  text-transform: capitalize;
   line-height: 1.8;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
