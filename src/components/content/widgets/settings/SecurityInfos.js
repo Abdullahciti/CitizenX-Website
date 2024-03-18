@@ -10,7 +10,7 @@ const SecurityInfos = () => {
           <span>Password</span>
           <p className="c-grey mt-5 mb-0 fs-13">Last Change On 25/10/2023</p>
         </div>
-        <a className="button bg-blue c-white btn-shape" href="#1">
+        <a className="button bg-mainColor c-white btn-shape" href="#1">
           Change
         </a>
       </div>

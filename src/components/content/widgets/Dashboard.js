@@ -24,7 +24,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className="dashboard">
+    <div className="dashboard mt-20">
       <div className="content w-full">
         <motion.div
           initial={{ x: -50, zIndex: 0 }}
@@ -32,45 +32,45 @@ const Dashboard = () => {
           transition={{ type: "spring", stiffness: 100 }}
         >
           <div className="wrapper d-grid gap-20">
-            {/* <!-- Start Welcome Widget --> */}
+            {/* Start Welcome Widget > */}
             <Welcome />
-            {/* <!-- End Welcome Widget -->
-            <!-- Start Quick Draft Widget --> */}
-            <QuickDraft />
-            {/* <!-- End Quick Draft Widget -->
-            <!-- Start Targets Widget --> */}
+            {/* End Welcome Widget >
+           Start Targets Widget > */}
             <Targets />
-            {/* <!-- End Targets Widget -->
-            <!-- Start Ticket Widget --> */}
+            {/* End Targets Widget >
+           Start Ticket Widget > */}
             <Tickets />
-            {/* <!-- End Ticket Widget -->
-            <!-- Start Latest News Widget --> */}
+            {/* End Ticket Widget >
+           Start Latest News Widget > */}
             <LatestNews />
-            {/* <!-- End Latest News Widget -->
-            <!-- Start Tasks Widget --> */}
+            {/* End Latest News Widget >
+           Start Tasks Widget > */}
             <Tasks />
-            {/* <!-- End Tasks -->
-            <!-- Start Top Search Word Widget --> */}
+            {/* End Tasks >
+           Start Top Search Word Widget > */}
             <TopSeachWord />
-            {/* <!-- End Top Search Word Widget -->
-            <!-- Start Latest Uploads Widget --> */}
+            {/* End Top Search Word Widget >
+           Start Latest Uploads Widget > */}
             <LatestUploads />
-            {/* <!-- End Latest Uploads Widget -->
-            <!-- Start Last Project Progress Widget --> */}
+            {/* End Latest Uploads Widget >
+           Start Last Project Progress Widget > */}
             <LastProject />
-            {/* <!-- End Last Project Progress Widget --> */}
-            {/* <!-- Start Reminders Widget --> */}
+            {/* End Last Project Progress Widget > */}
+            {/* Start Reminders Widget > */}
             <Reminders />
-            {/* <!-- End Reminders Widget --> */}
-            {/* <!-- Start Latest Post Widget --> */}
+            {/* End Reminders Widget */}
+            {/* Start Latest Post Widget  */}
             <LatestPosts />
-            {/* <!-- End Latest Post Widget -->
-            <!-- Start Social Media Stats Widget --> */}
+            {/* End Latest Post Widget */}
+            {/*Start Social Media Stats Widget */}
             <SocialMedia />
-            {/* <!-- End Media Stats Widget --> */}
-            {/* <!-- Start Projects Table --> */}
+            {/*  End Media Stats Widget  */}
+            {/* Start Projects Table > */}
             <ProjectsTable />
-            {/* <!-- End Projects Table --> */}
+            {/*  End Projects Table > */}
+            {/* Start Quick Draft Widget */}
+            <QuickDraft />
+            {/* End Quick Draft Widget */}
           </div>
         </motion.div>
       </div>

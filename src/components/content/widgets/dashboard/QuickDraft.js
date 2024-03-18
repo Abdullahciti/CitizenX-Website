@@ -14,9 +14,10 @@ const QuickDraft = () => {
           placeholder="Your Thought"
         ></textarea>
         <input
-          className="save d-block fs-14 bg-blue c-white b-none w-fit btn-shape"
+          className="save d-block fs-14 bg-mainColor c-white b-none w-fit btn-shape"
           type="submit"
           value="Save"
+          onClick={(e) => e.preventDefault()}
         />
       </form>
     </div>

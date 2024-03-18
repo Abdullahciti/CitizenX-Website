@@ -51,7 +51,7 @@ const ProjectsTable = () => {
                 <img decoding="async" src={teamFive} alt="" />
               </td>
               <td>
-                <span className="label btn-shape bg-blue c-white">
+                <span className="label btn-shape bg-mainColor c-white">
                   In Progress
                 </span>
               </td>

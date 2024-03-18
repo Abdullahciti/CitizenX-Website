@@ -3,7 +3,7 @@ import { Avatar, welcome } from "../../../../assets";
 
 const Welcome = () => {
   return (
-    <div className="welcome bg-white rad-10 txt-c-mobile block-mobile mt-10">
+    <div className="welcome bg-white rad-10 txt-c-mobile block-mobile">
       <div className="intro p-20 d-flex space-between bg-eee">
         <div>
           <h2 className="m-0">Welcome</h2>
@@ -28,7 +28,7 @@ const Welcome = () => {
       </div>
       <Link
         to="/profile"
-        className="visit d-block fs-14 bg-blue c-white w-fit btn-shape"
+        className="visit d-block fs-14 bg-mainColor c-white w-fit btn-shape"
       >
         Profile
       </Link>

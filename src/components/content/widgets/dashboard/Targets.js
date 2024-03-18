@@ -11,8 +11,8 @@ const Targets = () => {
           <span className="fs-14 c-grey">Money</span>
           <span className="d-block mt-5 mb-10 fw-bold">$20.000</span>
           <div className="progress p-relative">
-            <span className="bg-blue blue" style={{ width: "80%" }}>
-              <span className="bg-blue">80%</span>
+            <span className="bg-mainColor blue" style={{ width: "80%" }}>
+              <span className="bg-mainColor">80%</span>
             </span>
           </div>
         </div>
