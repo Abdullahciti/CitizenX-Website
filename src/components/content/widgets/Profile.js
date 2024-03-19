@@ -1,13 +1,6 @@
 // Motion to improve ux
 import { motion } from "framer-motion";
 
-import {
-  Avatar,
-  activityOne,
-  activityTwo,
-  activityThree,
-} from "../../../assets/index.js";
-
 // Profile Components
 import Overview from "./profile/Overview";
 import SkillsCard from "./profile/SkillsCard.js";

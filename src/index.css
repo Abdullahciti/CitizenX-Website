@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap");
 
 * {
   box-sizing: border-box;
@@ -94,7 +94,7 @@ ul {
 .sidebar ul li a svg {
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 .sidebar ul li a span {
   font-size: 14px;
@@ -160,7 +160,7 @@ ul {
   transition: width 0.3s;
 }
 
-@media (max-width:375px) {
+@media (max-width: 375px) {
   .icons {
     width: 100%;
     justify-content: space-between;
@@ -240,8 +240,13 @@ ul {
 }
 /* Start Welcome Widget */
 .welcome {
-  overflow: hidden;
-  grid-column: span 2;
+  /* overflow: hidden; */
+  grid-column: initial;
+}
+@media (min-width: 1600px) {
+  .welcome {
+    grid-column: span 2;
+  }
 }
 .welcome .intro img {
   margin-bottom: -10px;
@@ -284,7 +289,12 @@ ul {
 /* End Welcome Widget */
 /* Start Quick Draft Widget */
 .quick-draft {
-  grid-column: span 2;
+  grid-column: initial;
+}
+@media (min-width: 1600px) {
+  .quick-draft {
+    grid-column: span 3;
+  }
 }
 .quick-draft textarea {
   resize: none;
@@ -556,13 +566,19 @@ ul {
 /* End Social Media */
 /* Start Projects Table */
 .projects {
-  grid-column: span 2;
+  grid-column: initial;
+}
+@media (min-width: 1600px) {
+  .projects {
+    grid-column: span 3;
+  }
 }
 .projects .responsive-table {
   overflow-x: auto;
 }
 .projects table {
   border-spacing: 0;
+  min-width: 1000px;
 }
 .projects thead td {
   background-color: #eee;
@@ -647,10 +663,10 @@ ul {
   padding-left: 10px;
   border-radius: 0 6px 6px 0;
 }
-.settings-page .social-boxes > div:not(:last-of-type):focus-within i{
+.settings-page .social-boxes > div:not(:last-of-type):focus-within i {
   color: var(--alt-color);
 }
-.settings-page .social-boxes > div:last-of-type:focus-within i{
+.settings-page .social-boxes > div:last-of-type:focus-within i {
   color: var(--red-color);
 }
 .widgets-control .control input[type="checkbox"] {
@@ -821,7 +837,7 @@ ul {
 .profile-page .avatar-box a p {
   width: fit-content;
 }
-.profile-page .avatar-box a p:hover{
+.profile-page .avatar-box a p:hover {
   color: var(--main-color);
   transition: var(--main-transion);
   text-decoration: underline;
