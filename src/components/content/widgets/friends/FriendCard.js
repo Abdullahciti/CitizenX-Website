@@ -50,7 +50,7 @@ const FriendCard = ({
       <div className="info between-flex fs-13">
         <span className="c-grey">Joined {date}</span>
         <div>
-          <span className="bg-blue c-white btn-shape" to="/profile">
+          <span className="bg-mainColor c-white btn-shape" to="/profile">
             Profile
           </span>
           <a className="bg-red c-white btn-shape" href="#1">
