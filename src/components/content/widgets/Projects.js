@@ -17,10 +17,10 @@ const Projects = () => {
   return (
     <div className="projects">
       <div className="content w-full">
-        <motion.div
-          initial={{ x: -50, zIndex: 0 }}
-          animate={{ x: 0, zIndex: 1 }}
-          transition={{ type: "spring", stiffness: 100 }}
+      <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1  }}
+          transition={{ duration:0.6 }}
         >
           <h1 className="p-relative">Projects</h1>
           <div className="projects-page d-grid m-20 gap-20">

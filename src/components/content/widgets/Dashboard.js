@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 // Motion to improve ux
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+
+// Function
 import handlPath from "../../../functions/handlePath";
 
 // Dashboard components
@@ -29,8 +31,7 @@ const Dashboard = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1  }}
-          // transition={{ type: "spring", stiffness: 100 }}
-          transition={{ duration:0.8 }}
+          transition={{ duration:0.6 }}
         >
           <div className="wrapper d-grid gap-20">
             {/* Start Welcome Widget > */}

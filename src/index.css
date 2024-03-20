@@ -45,58 +45,58 @@ ul {
   background-color: #f1f5f9;
   min-height: 100vh;
 }
-/* Start Sidebar */
-.sidebar {
+/* Start navbar */
+.navbar {
   width: 20%;
   min-height: 100vh !important;
   box-shadow: 0 0 10px #ddd;
   position: relative;
 }
-.sidebar .link {
+.navbar .link {
   margin-bottom: 50px;
   color: black;
   transition: var(--main-transiton);
 }
-.sidebar .link:hover {
+.navbar .link:hover {
   color: var(--main-color);
 }
-.sidebar > h3::before,
-.sidebar > h3::after {
+.navbar > h3::before,
+.navbar > h3::after {
   content: "";
   background-color: black;
   transform: translateX(-50%);
   position: absolute;
   left: 50%;
 }
-.sidebar > h3::before {
+.navbar > h3::before {
   width: 80px;
   height: 2px;
   bottom: -20px;
 }
-.sidebar > h3::after {
+.navbar > h3::after {
   bottom: -29px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   border: 4px solid white;
 }
-.sidebar ul li a {
+.navbar ul li a {
   display: flex;
   align-items: center;
   transition: 0.3s;
   margin-bottom: 5px;
 }
-.sidebar ul li a:hover,
-.sidebar ul li a.active {
+.navbar ul li a:hover,
+.navbar ul li a.active {
   background-color: var(--alt-color);
   color: white;
 }
-.sidebar ul li a svg {
+.navbar ul li a svg {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sidebar ul li a span {
+.navbar ul li a span {
   font-size: 14px;
   margin-left: 10px;
   line-height: 1.8;
@@ -105,42 +105,91 @@ ul {
   align-items: center;
 }
 @media (max-width: 767px) {
-  .sidebar {
+  .navbar {
     width: 90px;
     padding: 10px;
   }
-  .sidebar > h3 {
+  .navbar > h3 {
     font-size: 13px;
     margin-bottom: 15px;
   }
-  .sidebar > h3::before,
-  .sidebar > h3::after {
+  .navbar > h3::before,
+  .navbar > h3::after {
     display: none;
   }
-  .sidebar ul li a {
+  .navbar ul li a {
     /* display: block; */
     position: relative;
     /* padding: ; */
   }
-  .sidebar ul li i {
+  .navbar ul li i {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
   }
-  .sidebar ul li a span {
+  .navbar ul li a span {
     display: none;
   }
-  .page > .w-80 {
-    width: calc(100% - 90px) !important;
+  .mob-menu .navbar ul li a span {
+    display: block;
   }
-  .page > .w-20 {
-    width: 90px;
+  .mob-menu .navbar ul li i {
+    padding-left: 20px;
+    position: initial;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
-/* End Sidebar */
+.page .main-menu {
+  width: 20% !important;
+  position: initial;
+}
+.page .main{
+  width: 80% !important;
+}
+.page .main .mob-menu{
+  display: none;
+}
+@media (max-width: 767px) {
+  .page .main-menu {
+    display: none;
+  }
+  .page .main {
+    min-width: 100%;
+    position: relative;
+  }
+  .page .main .mob-menu{
+    display: block;
+    position: absolute;
+    left: -50%;
+    top: 70px;
+    width: 50%;
+    transition: all 0.4s ease;
+    z-index: 50;
+  }
+  .page .main .mob-menu.active {
+    left: 0;
+  }
+}
+/* End navbar */
 /* Start Content */
 .content {
   overflow: hidden;
+}
+.head {
+  z-index: 51;
+}
+.head .menu {
+  display: none;
+  left: 18px;
+  font-size: 25px;
+  top: 50%;
+  transform: translateY(-43%);
+  line-height: 1.8;
+  transition: var(--main-transiton);
+}
+.head .search {
+  margin-left: 0;
 }
 .head .search svg {
   font-weight: 900;
@@ -162,11 +211,24 @@ ul {
 
 @media (max-width: 375px) {
   .icons {
-    width: 100%;
-    justify-content: space-between;
+    /* width: 100%;
+    justify-content: space-between; */
+    margin-left: auto;
   }
   .head .search {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .head .search {
+    margin-left: 35px;
+  }
+ .head .menu {
+    display: block;
+  }
+  .head .menu:hover,
+  .head .menu.active {
+    color: var(--main-color);
   }
 }
 .head .search input:focus {
@@ -869,7 +931,7 @@ ul {
 .profile-page .avatar-box .github-link {
   position: relative;
 }
-.profile-page .avatar-box .github-link a{
+.profile-page .avatar-box .github-link a {
   font-size: 30px;
   padding: 5px;
   margin: 5px;
@@ -899,7 +961,7 @@ ul {
 .profile-page .info-box h4 {
   font-weight: normal;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .profile-page .info-box .box .fs-14 {
     margin: 0 auto;
   }
@@ -1134,7 +1196,7 @@ ul {
   transform: translateX(-50%);
   font-size: 13px;
 }
-.courses-page .course .info span i{
+.courses-page .course .info span i {
   padding: 0 3px;
 }
 /* End Courses Page */

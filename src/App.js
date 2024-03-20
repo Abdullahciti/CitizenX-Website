@@ -1,6 +1,6 @@
 // Import Routing
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // Settings GLobal
 import "./framework.css";
@@ -13,7 +13,7 @@ import handleActive from "./functions/handleActive";
 import handlePath from "./functions/handlePath";
 
 // Start Navbar
-import Navbar from "./components/navbar menu/Navbar";
+import Navbar from "./components/navbarmenu/Navbar";
 // Start Navbar Links
 import Dashboard from "./components/content/widgets/Dashboard";
 import Projects from "./components/content/widgets/Projects";
@@ -26,6 +26,10 @@ import Plans from "./components/content/widgets/Plans";
 
 // Components
 import Header from "./components/Header";
+import NavbarMobile from "./components/navbarmenu/NavbarMobile";
+
+// Motion 
+import { motion } from "framer-motion";
 
 // Start App
 function App() {
@@ -33,18 +37,27 @@ function App() {
     handlePath();
   }, []);
 
+  const [menu, setMenu] = useState(false)
+
   return (
     <BrowserRouter>
       <div className="App page d-flex">
         {/*  Start Navbar */}
-        <div className="w-20">
+        <div className="main-menu">
           <Navbar handleActive={handleActive} />
         </div>
         {/*  End Navbar */}
         {/* <Dashboard /> */}
-        <div className="w-80">
+        <div className="main">
+          {menu && <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1  }}
+          transition={{ duration:0.6 }}
+        > <div className={menu ? "mob-menu active" : "mob-menu"}>
+            <NavbarMobile />
+            </div> </motion.div> } 
           {/* Start Header */}
-          <Header />
+          <Header menu={menu} handleMenu={() => setMenu(prev => !prev)} />
           {/* End Header */}
           <Routes>
             <Route path="/" element={<Dashboard />} />
