@@ -21,6 +21,11 @@ import teamFour from "./imgs/team-04.jpg";
 import teamFive from "./imgs/team-05.png";
 import teamSix from "./imgs/team-06.png";
 import teamEight from "./imgs/team-08.jpg";
+import htmlCss from "./imgs/Html & css.png";
+import germanCourse from "./imgs/German-Course.png";
+import backendCourse from "./imgs/Backend-Course.png";
+import reactCourse from "./imgs/React.png";
+import VueCourse from "./imgs/vue-Course.png";
 import courseOne from "./imgs/course-01.jpg";
 import courseTwo from "./imgs/course-02.jpg";
 import courseThree from "./imgs/course-03.jpg";
@@ -33,6 +38,8 @@ import newsFour from "./imgs/news-04.png";
 import activityOne from "./imgs/activity-01.png";
 import activityTwo from "./imgs/activity-02.png";
 import activityThree from "./imgs/activity-03.png";
+import galleryOne from "./imgs/gallery-01.png"
+import project from "./imgs/project.png";
 
 export {
   welcome,
@@ -62,6 +69,11 @@ export {
   teamFive,
   teamSix,
   teamEight,
+  htmlCss,
+  germanCourse,
+  reactCourse,
+  backendCourse,
+  VueCourse,
   courseOne,
   courseTwo,
   courseThree,
@@ -70,4 +82,6 @@ export {
   activityOne,
   activityTwo,
   activityThree,
+  galleryOne,
+  project,
 };
