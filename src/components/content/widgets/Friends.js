@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 
 import {
-  teamOne,
   teamTwo,
   teamEight,
   avatarOne,
@@ -12,6 +11,7 @@ import {
   avatarFour,
   avatarFive,
   avatarSix,
+  Avatar,
 } from "../../../assets/index.js";
 import FriendCard from "./friends/FriendCard.js";
 
@@ -27,14 +27,15 @@ const Friends = () => {
         <h1 className="p-relative">Friends</h1>
         <div className="friends-page d-grid m-20 gap-20">
           <FriendCard
-            src={teamOne}
-            name={"Ahmed Nasser"}
-            title={"JavaScript Developer"}
-            friendsNum={99}
-            projNum={15}
-            artNum={15}
+            src={Avatar}
+            name={"CitizenX"}
+            title={"Frontend Developer"}
+            friendsNum={24}
+            projNum={13}
+            artNum={3}
             type={"VIP"}
-            date={"02/10/2023"}
+            date={"01/01/2022"}
+            link={"/profile"}
           />
           <FriendCard
             src={avatarSix}

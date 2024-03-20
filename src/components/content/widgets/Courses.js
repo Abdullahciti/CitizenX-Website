@@ -1,15 +1,12 @@
 import {
-  avatarFive,
-  avatarOne,
-  avatarThree,
-  courseOne,
-  courseTwo,
   courseThree,
   courseFour,
-  courseFive,
-  avatarFour,
-  avatarTwo,
-  avatarSix,
+  germanCourse,
+  reactCourse,
+  Avatar,
+  backendCourse,
+  VueCourse,
+  galleryOne,
 } from "../../../assets/index.js";
 
 // Motion
@@ -27,34 +24,46 @@ const Courses = () => {
         >
           <h1 className="p-relative">Courses</h1>
           <div className="courses-page d-grid m-20 gap-20">
-            {/* Start Mastering web desgin */}
+            {/* Start German Course */}
             <CourseCard
-              course={courseOne}
-              avatar={avatarOne}
-              title={"Mastering Web Design"}
+              course={galleryOne}
+              avatar={Avatar}
+              title={"Html & Css"}
               desc={
-                "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture"
+                "Embark on a step-by-step journey to master HTML and CSS, laying the foundation for web development and keeping your skills up-to-date."
               }
-              parts={980}
-              cost={500}
+              parts={21}
+              cost={"free"}
             />
-            {/* End Mastering web desgin */}
-            {/* Start Data Structure And Algorithms */}
+            {/* End German Course */}
+            {/* Start German Course */}
             <CourseCard
-              course={courseTwo}
-              avatar={avatarSix}
-              title={"Data Structure And Algorithms"}
+              course={germanCourse}
+              avatar={Avatar}
+              title={"German B2 Course"}
               desc={
-                "Master The Art Of Data Strcuture And Famous Algorithms Like Sorting, Dividing And Conquering"
+                "Ich kann mich jetzt ganz gut ausdrücken und mich gut mit den Menschen unterhalten."
+              }
+              parts={21}
+              cost={400}
+            />
+            {/* End German Course */}
+            {/* StartReact.js */}
+            <CourseCard
+              course={reactCourse}
+              avatar={Avatar}
+              title={"React.js Course"}
+              desc={
+                "You can design components that represent different parts of your UI and compose them together to build complex interfaces."
               }
               parts={1150}
               cost={210}
             />
-            {/* End Data Structure And Algorithms */}
+            {/* End React.js */}
             {/* Start Mastering web desgin */}
             <CourseCard
               course={courseThree}
-              avatar={avatarThree}
+              avatar={Avatar}
               title={"Responsive Web Design"}
               desc={
                 "Mastering Responsive Web Design And Media Queries And Know Everything About Breakpoints"
@@ -63,144 +72,40 @@ const Courses = () => {
               cost={90}
             />
             {/* End Mastering web desgin */}
-            {/* Start Mastering Python */}
+            {/* Start Mastering JavaScript */}
             <CourseCard
               course={courseFour}
-              avatar={avatarFive}
-              title={"Mastering Python"}
+              avatar={Avatar}
+              title={"Mastering JavaScript"}
               desc={
-                "Mastering Python to prepare for data science and AI and autimatin in my life"
+                "Mastering JavaScript for creating reactive and dynamic web applications"
               }
               parts={950}
               cost={250}
             />
-            {/* End Mastering Python */}
+            {/* End Mastering JavaScript */}
             {/* Start Backend Basics */}
             <CourseCard
-              course={courseFive}
-              avatar={avatarFour}
+              course={backendCourse}
+              avatar={Avatar}
               title={"Backend Basics"}
               desc={"Backend Tutorials to know what happens behind the scenes"}
               parts={150}
               cost={"free"}
             />
             {/* End Backend Basics */}
-            {/* Start Mastering web desgin */}
+            {/* Start Vue.js */}
             <CourseCard
-              course={courseOne}
-              avatar={avatarOne}
-              title={"Mastering Web Design"}
+              course={VueCourse}
+              avatar={Avatar}
+              title={"Vue.js"}
               desc={
-                "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture"
+                "Mastering JavaScript`s framework like Vue.js will make me imporve/create reactive web applications"
               }
               parts={980}
               cost={500}
             />
-            {/* End Mastering web desgin */}
-            {/* Start Data Structure And Algorithms */}
-            <CourseCard
-              course={courseTwo}
-              avatar={avatarSix}
-              title={"Data Structure And Algorithms"}
-              desc={
-                "Master The Art Of Data Strcuture And Famous Algorithms Like Sorting, Dividing And Conquering"
-              }
-              parts={1150}
-              cost={210}
-            />
-            {/* End Data Structure And Algorithms */}
-            {/* Start Mastering web desgin */}
-            <CourseCard
-              course={courseThree}
-              avatar={avatarThree}
-              title={"Responsive Web Design"}
-              desc={
-                "Mastering Responsive Web Design And Media Queries And Know Everything About Breakpoints"
-              }
-              parts={650}
-              cost={90}
-            />
-            {/* End Mastering web desgin */}
-            {/* Start Mastering Python */}
-            <CourseCard
-              course={courseFour}
-              avatar={avatarFive}
-              title={"Mastering Python"}
-              desc={
-                "Mastering Python to prepare for data science and AI and autimatin in my life"
-              }
-              parts={950}
-              cost={250}
-            />
-            {/* End Mastering Python */}
-            {/* Start Backend Basics */}
-            <CourseCard
-              course={courseFive}
-              avatar={avatarFour}
-              title={"Backend Basics"}
-              desc={"Backend Tutorials to know what happens behind the scenes"}
-              parts={150}
-              cost={"free"}
-            />
-            {/* End Backend Basics */}
-            {/* Start Mastering web desgin */}
-            <CourseCard
-              course={courseOne}
-              avatar={avatarOne}
-              title={"Mastering Web Design"}
-              desc={
-                "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture"
-              }
-              parts={980}
-              cost={500}
-            />
-            {/* End Mastering web desgin */}
-            {/* Start Data Structure And Algorithms */}
-            <CourseCard
-              course={courseTwo}
-              avatar={avatarTwo}
-              title={"Data Structure And Algorithms"}
-              desc={
-                "Master The Art Of Data Strcuture And Famous Algorithms Like Sorting, Dividing And Conquering"
-              }
-              parts={1150}
-              cost={210}
-            />
-            {/* End Data Structure And Algorithms */}
-            {/* Start Mastering web desgin */}
-            <CourseCard
-              course={courseThree}
-              avatar={avatarThree}
-              title={"Responsive Web Design"}
-              desc={
-                "Mastering Responsive Web Design And Media Queries And Know Everything About Breakpoints"
-              }
-              parts={650}
-              cost={90}
-            />
-            {/* End Mastering web desgin */}
-            {/* Start Mastering Python */}
-            <CourseCard
-              course={courseFour}
-              avatar={avatarFive}
-              title={"Mastering Python"}
-              desc={
-                "Mastering Python to prepare for data science and AI and autimatin in my life"
-              }
-              parts={950}
-              cost={250}
-            />
-            {/* End Mastering Python */}
-            {/* Start Backend Basics */}
-            <CourseCard
-              course={courseFive}
-              avatar={avatarFour}
-              title={"Backend Basics"}
-              desc={"Backend Tutorials to know what happens behind the scenes"}
-              parts={150}
-              cost={"free"}
-            />
-            {/* End Backend Basics */}
+            {/* End Vue.js */}
           </div>
         </motion.div>
       </div>

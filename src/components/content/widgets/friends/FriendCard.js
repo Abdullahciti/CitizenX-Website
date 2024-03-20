@@ -1,6 +1,7 @@
 // Icons
 import { IoIosCall } from "react-icons/io";
 import { BiSolidMessageRoundedEdit } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const FriendCard = ({
   src,
@@ -11,6 +12,7 @@ const FriendCard = ({
   artNum,
   type,
   date,
+  link
 }) => {
   return (
     <div className="friend bg-white rad-6 p-20 p-relative">
@@ -50,12 +52,16 @@ const FriendCard = ({
       <div className="info between-flex fs-13">
         <span className="c-grey">Joined {date}</span>
         <div>
-          <span className="bg-mainColor c-white btn-shape" to="/profile">
+          { !link ? <span className="bg-mainColor c-white btn-shape" to="/profile">
             Profile
-          </span>
-          <a className="bg-red c-white btn-shape" href="#1">
+          </span> 
+          :
+          <Link className="bg-mainColor c-white btn-shape" to={link}>
+            Profile
+          </Link>}
+          <span className="bg-red c-white btn-shape">
             Remove
-          </a>
+          </span>
         </div>
       </div>
     </div>

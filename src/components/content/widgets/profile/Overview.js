@@ -1,9 +1,10 @@
 import { Avatar } from "../../../../assets";
+import { SiGithub } from "react-icons/si";
 
 const Overview = () => {
   return (
     <div className="overview bg-white rad-10 d-flex align-center">
-      <div className="avatar-box txt-c p-20">
+      <div className="avatar-box txt-c p-20 m-20">
         <img decoding="async" className="rad-half mb-10" src={Avatar} alt="" />
         <h3 className="m-0">Abdullah Arafa</h3>
         <a
@@ -24,10 +25,20 @@ const Overview = () => {
           <i className="fa-solid fa-star c-orange fs-13"></i>
         </div>
         <p className="c-grey m-0 fs-13">Full-Time</p>
+        <span className="github-link">
+          <a
+            href="https://github.com/Abdullahciti?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            <SiGithub />
+          </a>
+        </span>
       </div>
       <div className="info-box w-full txt-c-mobile">
         {/* <!-- Start Information Row --> */}
-        <div className="box p-20 d-flex align-center">
+        <div className="box mx-auto p-20 d-flex align-center">
           <h4 className="c-grey fs-15 m-0 w-full">General Information</h4>
           <div className="fs-14">
             <span className="c-grey">Full Name</span>

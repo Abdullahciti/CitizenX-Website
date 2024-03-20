@@ -27,9 +27,10 @@ const Dashboard = () => {
     <div className="dashboard mt-20">
       <div className="content w-full">
         <motion.div
-          initial={{ x: -50, zIndex: 0 }}
-          animate={{ x: 0, zIndex: 1 }}
-          transition={{ type: "spring", stiffness: 100 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1  }}
+          // transition={{ type: "spring", stiffness: 100 }}
+          transition={{ duration:0.8 }}
         >
           <div className="wrapper d-grid gap-20">
             {/* Start Welcome Widget > */}

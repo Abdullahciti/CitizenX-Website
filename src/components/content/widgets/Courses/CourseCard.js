@@ -15,7 +15,7 @@ const CourseCard = ({course, avatar, title, desc, parts, cost}) => {
                 </p>
               </div>
               <div className="info p-15 p-relative between-flex">
-                <span className="title bg-blue c-white btn-shape">
+                <span className="title bg-mainColor c-white btn-shape">
                   Course Info
                 </span>
                 <span className="c-grey">

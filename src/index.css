@@ -20,7 +20,7 @@ body {
 }
 *:focus {
   outline: none;
-  transition: var(--main-transion);
+  transition: var(--main-transiton);
 }
 a {
   text-decoration: none;
@@ -55,7 +55,7 @@ ul {
 .sidebar .link {
   margin-bottom: 50px;
   color: black;
-  transition: var(--main-transion);
+  transition: var(--main-transiton);
 }
 .sidebar .link:hover {
   color: var(--main-color);
@@ -307,6 +307,16 @@ ul {
 }
 .quick-draft .save:hover {
   background-color: var(--alt-color);
+}
+.quick-draft .error {
+  border: 1px solid var(--red-color);
+}
+.quick-draft .saved {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--main-color);
+  width: fit-content;
+  margin: 0 auto;
 }
 /* End Quick Draft Widget */
 /* Start Targets */
@@ -839,7 +849,7 @@ ul {
 }
 .profile-page .avatar-box a p:hover {
   color: var(--main-color);
-  transition: var(--main-transion);
+  transition: var(--main-transiton);
   text-decoration: underline;
 }
 .profile-page .avatar-box .level {
@@ -856,6 +866,24 @@ ul {
   background-color: var(--main-color);
   border-radius: 6px;
 }
+.profile-page .avatar-box .github-link {
+  position: relative;
+}
+.profile-page .avatar-box .github-link a{
+  font-size: 30px;
+  padding: 5px;
+  margin: 5px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--alt-color);
+  transition: var(--main-transiton);
+}
+
+.profile-page .avatar-box .github-link:hover {
+  color: var(--main-color);
+}
 .profile-page .info-box .box {
   flex-wrap: wrap;
   border-bottom: 1px solid #eee;
@@ -870,6 +898,11 @@ ul {
 }
 .profile-page .info-box h4 {
   font-weight: normal;
+}
+@media (max-width:767px) {
+  .profile-page .info-box .box .fs-14 {
+    margin: 0 auto;
+  }
 }
 /* Start Training Code */
 .profile-page .info-box .toggle-switch {
@@ -964,7 +997,7 @@ ul {
 }
 .projects-page .project a {
   color: black;
-  transition: var(--main-transion);
+  transition: var(--main-transiton);
 }
 .projects-page .project a:hover {
   color: var(--main-color);
@@ -1067,8 +1100,16 @@ ul {
 .courses-page .course {
   overflow: hidden;
 }
+.courses-page .course:hover {
+  color: black;
+}
 .courses-page .course .cover {
   width: 100%;
+  height: 260px;
+  background: rgb(29, 21, 21);
+}
+.courses-page .course p {
+  height: 75px;
 }
 .courses-page .course .instructor {
   position: absolute;
@@ -1092,6 +1133,9 @@ ul {
   left: 50%;
   transform: translateX(-50%);
   font-size: 13px;
+}
+.courses-page .course .info span i{
+  padding: 0 3px;
 }
 /* End Courses Page */
 /* Start Friends Page */
@@ -1151,7 +1195,7 @@ ul {
   font-size: 40px;
   opacity: 0.2;
 }
-.friend .info a {
+.friend .info span {
   margin: 0 3px;
 }
 /* End Friends Page */

@@ -31,7 +31,7 @@ const Profile = () => {
            <Overview />
             {/* <!-- End Overview -->
           <!-- Start Other Data --> */}
-            <div className="other-data d-flex gap-20">
+            <div className="other-data d-flex">
               {/* Start Skills Card */}
               <SkillsCard />
               {/* End Skills Card */}
