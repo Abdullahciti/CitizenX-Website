@@ -7,7 +7,7 @@ import { FaSearch, FaBars } from "react-icons/fa";
 const Header = ({ menu, handleMenu }) => {
   return (
     <div className="head bg-white p-15 between-flex p-relative">
-        <div className="menu p-absolute" onClick={handleMenu}>
+        <div className="menu-icon p-absolute" onClick={handleMenu}>
           <FaBars />
         </div>
       <div className="search p-relative">

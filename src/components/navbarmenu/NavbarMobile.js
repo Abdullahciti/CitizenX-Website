@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 // Icons
 import { MdDashboard } from "react-icons/md";
 import { FaUserFriends } from "react-icons/fa";
@@ -9,14 +10,17 @@ import { SiCoursera } from "react-icons/si";
 import { LuFileSearch } from "react-icons/lu";
 import { MdOutlinePayments } from "react-icons/md";
 import handleActive from "../../functions/handleActive";
+import { TbLetterX } from "react-icons/tb";
 
-
-const NavbarMobile = () => {
-    return ( 
-
-
-// {/* <PiBellRingingBold /> */}
-    <div className="navbar bg-white p-20 p-fixed w-50">
+const NavbarMobile = ({ menu, handleMenu }) => {
+  return (
+    // {/* <PiBellRingingBold /> */}
+    <div
+      className={menu ? "navbar active bg-white p-20" : "navbar bg-white p-20"}
+    >
+      <div className="menu-icon p-absolute" onClick={handleMenu}>
+        <TbLetterX />
+      </div>
       <Link className="link" to="/">
         <h3 className="p-relative txt-c mt-0">TopC</h3>
       </Link>
@@ -119,8 +123,7 @@ const NavbarMobile = () => {
         </li>
       </ul>
     </div>
+  );
+};
 
-     );
-}
- 
 export default NavbarMobile;
