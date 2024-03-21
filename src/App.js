@@ -54,7 +54,7 @@ function App() {
                animate={{ opacity: 1 }}
                transition={{ duration: 0.6 }}
              > */}
-          <div className="mob-menu">
+          <div className="mob-menu" onClick={() => {setMenu(false)}}>
             <NavbarMobile
               menu={menu}
               handleMenu={() => setMenu((prev) => !prev)}
