@@ -160,9 +160,9 @@ ul {
   }
   .page .main .mob-menu .navbar {
     position: fixed;
-    left: -40%;
+    left: -50%;
     top: 0px;
-    width: 40%;
+    width: 50%;
     transition: all 0.5s ease;
     z-index: 12;
   }
