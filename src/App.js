@@ -28,7 +28,7 @@ import Plans from "./components/content/widgets/Plans";
 import Header from "./components/Header";
 import NavbarMobile from "./components/navbarmenu/NavbarMobile";
 
-// Motion 
+// Motion
 import { motion } from "framer-motion";
 
 // Start App
@@ -37,7 +37,7 @@ function App() {
     handlePath();
   }, []);
 
-  const [menu, setMenu] = useState(false)
+  const [menu, setMenu] = useState(false);
 
   return (
     <BrowserRouter>
@@ -49,15 +49,20 @@ function App() {
         {/*  End Navbar */}
         {/* <Dashboard /> */}
         <div className="main">
-          {menu && <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1  }}
-          transition={{ duration:0.6 }}
-        > <div className={menu ? "mob-menu active" : "mob-menu"}>
-            <NavbarMobile />
-            </div> </motion.div> } 
+          {menu && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6 }}
+            >
+              {" "}
+              <div className={menu ? "mob-menu active" : "mob-menu"}>
+                <NavbarMobile />
+              </div>{" "}
+            </motion.div>
+          )}
           {/* Start Header */}
-          <Header menu={menu} handleMenu={() => setMenu(prev => !prev)} />
+          <Header menu={menu} handleMenu={() => setMenu((prev) => !prev)} />
           {/* End Header */}
           <Routes>
             <Route path="/" element={<Dashboard />} />
