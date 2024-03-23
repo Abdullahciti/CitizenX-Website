@@ -39,6 +39,8 @@ function App() {
 
   const [menu, setMenu] = useState(false);
 
+  const [searchValue, setSearchValue] = useState("");
+
   return (
     <BrowserRouter>
       <div className="App page d-flex">
@@ -54,7 +56,7 @@ function App() {
                animate={{ opacity: 1 }}
                transition={{ duration: 0.6 }}
              > */}
-          <div className="mob-menu" onClick={() => {setMenu(false)}}>
+          <div className="mob-menu">
             <NavbarMobile
               menu={menu}
               handleMenu={() => setMenu((prev) => !prev)}
@@ -63,17 +65,35 @@ function App() {
           {/* </motion.div> */}
 
           {/* Start Header */}
-          <Header menu={menu} handleMenu={() => setMenu((prev) => !prev)} />
+          <Header
+            menu={menu}
+            handleMenu={() => setMenu((prev) => !prev)}
+            handleSearchChange={(e) =>
+              setSearchValue((searchValue) => e.target.value)
+            }
+          />
           {/* End Header */}
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/friends" element={<Friends />} />
-            <Route path="/files" element={<Files />} />
+            <Route
+              path="/projects"
+              element={<Projects searchValue={searchValue} />}
+            />
+            <Route
+              path="/courses"
+              element={<Courses searchValue={searchValue} />}
+            />
+            <Route
+              path="/friends"
+              element={<Friends searchValue={searchValue} />}
+            />
+            <Route
+              path="/files"
+              element={<Files searchValue={searchValue} />}
+            />
             <Route path="/plans" element={<Plans />} />
           </Routes>
         </div>

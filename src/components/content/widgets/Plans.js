@@ -78,7 +78,7 @@ const Plans = () => {
             </div>
             {/* <!-- Start Plan --> */}
             <div className="plan blue bg-white p-20">
-              <div className="top bg-blue txt-c p-20">
+              <div className="top bg-mainColor txt-c p-20">
                 <h2 className="m-0 c-white">Basic</h2>
                 <div className="price c-white">
                   <span>$</span>7.99
@@ -134,7 +134,7 @@ const Plans = () => {
               <div className="join center-flex">
                 <a
                   href="#1"
-                  className="btn-shape bg-blue c-white d-block w-fit"
+                  className="btn-shape bg-mainColor c-white d-block w-fit"
                 >
                   Join
                 </a>

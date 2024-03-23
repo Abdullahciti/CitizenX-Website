@@ -10,7 +10,6 @@ import { SiCoursera } from "react-icons/si";
 import { LuFileSearch } from "react-icons/lu";
 import { MdOutlinePayments } from "react-icons/md";
 import handleActive from "../../functions/handleActive";
-import { TbLetterX } from "react-icons/tb";
 
 const NavbarMobile = ({ menu, handleMenu }) => {
   return (
@@ -19,7 +18,7 @@ const NavbarMobile = ({ menu, handleMenu }) => {
       className={menu ? "navbar active bg-white p-20" : "navbar bg-white p-20"}
     >
       <div className="menu-icon p-absolute" onClick={handleMenu}>
-        <TbLetterX />
+        X
       </div>
       <Link className="link" to="/">
         <h3 className="p-relative txt-c mt-0">TopC</h3>

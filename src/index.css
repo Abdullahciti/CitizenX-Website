@@ -163,7 +163,7 @@ ul {
     left: -50%;
     top: 0px;
     width: 50%;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
     z-index: 12;
   }
   .page .main .mob-menu .navbar.active {
@@ -178,7 +178,8 @@ ul {
   }
   .page .main .mob-menu .menu-icon {
     right: 15px;
-    font-size: 28px;
+    font-size: 20px;
+    font-weight: bold;
   }
   .page .main .mob-menu .menu-icon:hover {
     color: var(--red-color);
@@ -853,7 +854,8 @@ ul {
   border-color: var(--main-color);
 }
 .backup-control .date input[type="radio"]:checked + label::after {
-  transform: scale(1);
+  top: 50%;
+  transform: translateY(-50%);
 }
 .backup-control .servers {
   border-top: 1px solid #eee;
@@ -1137,18 +1139,16 @@ ul {
 }
 @media (max-width: 768px) {
   .projects-page .project .do {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
   }
 }
 .projects-page .project .do span {
   padding: 3px 8px;
   margin-left: 5px;
   width: fit-content;
-}
-@media (max-width: 768px) {
-  .projects-page .project .do span:not(:last-child) {
-    margin-bottom: 15px;
-  }
 }
 .projects-page .project .info {
   border-top: 1px solid #eee;
