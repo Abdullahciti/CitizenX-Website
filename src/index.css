@@ -16,11 +16,11 @@ body {
   --green-color: #22c55e;
   --red-color: #f44336;
   --grey-color: #888;
-  --main-transion: all 0.4s ease;
+  --main-transition: all 0.4s ease;
 }
 *:focus {
   outline: none;
-  transition: var(--main-transiton);
+  transition: var(--main-transition);
 }
 a {
   text-decoration: none;
@@ -55,7 +55,7 @@ ul {
 .navbar .link {
   margin-bottom: 50px;
   color: black;
-  transition: var(--main-transiton);
+  transition: var(--main-transition);
 }
 .navbar .link:hover {
   color: var(--main-color);
@@ -180,6 +180,8 @@ ul {
     right: 15px;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
+    transition: var(--main-transition);
   }
   .page .main .mob-menu .menu-icon:hover {
     color: var(--red-color);
@@ -218,7 +220,7 @@ ul {
   top: 50%;
   transform: translateY(-43%);
   line-height: 1.8;
-  transition: var(--main-transiton);
+  transition: var(--main-transition);
 }
 .head .search {
   margin-left: 0;
@@ -945,7 +947,7 @@ ul {
 }
 .profile-page .avatar-box a p:hover {
   color: var(--main-color);
-  transition: var(--main-transiton);
+  transition: var(--main-transition);
   text-decoration: underline;
 }
 .profile-page .avatar-box .level {
@@ -974,7 +976,7 @@ ul {
   left: 50%;
   transform: translateX(-50%);
   color: var(--alt-color);
-  transition: var(--main-transiton);
+  transition: var(--main-transition);
 }
 
 .profile-page .avatar-box .github-link:hover {
@@ -1093,7 +1095,7 @@ ul {
 }
 .projects-page .project a {
   color: black;
-  transition: var(--main-transiton);
+  transition: var(--main-transition);
 }
 .projects-page .project a:hover {
   color: var(--main-color);
