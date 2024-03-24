@@ -1,17 +1,6 @@
 const Tasks = () => {
   return (
     <div className="tasks p-20 bg-white rad-10">
-      Here are the corrected tasks:
-
-1. ****: ""
-
-2. ****: ""
-
-3. **Finish my main project**: ""
-
-4. ****: ""
-
-5. ****: ""
       <h2 className="mt-0 mb-20">Latest Tasks</h2>
       <div className="task-row between-flex">
         <div className="info">
