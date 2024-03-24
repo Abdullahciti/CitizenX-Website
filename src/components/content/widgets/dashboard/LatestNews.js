@@ -7,8 +7,8 @@ const LatestNews = () => {
       <div className="news-row d-flex align-center">
         <img decoding="async" src={newsOne} alt="" />
         <div className="info">
-          <h3>Created SASS Section</h3>
-          <p className="m-0 fs-14 c-grey">New SASS Examples & Tutorials</p>
+          <h3>Created a project with SASS</h3>
+          <p className="m-0 fs-14 c-grey">Following immersion in SASS examples and tutorials.</p>
         </div>
         <div className="btn-shape bg-eee fs-13 label">3 Days Ago</div>
       </div>
@@ -23,8 +23,8 @@ const LatestNews = () => {
       <div className="news-row d-flex align-center">
         <img decoding="async" src={newsThree} alt="" />
         <div className="info">
-          <h3>Team Increased</h3>
-          <p className="m-0 fs-14 c-grey">3 Developers Joined The Team</p>
+          <h3>Join my team</h3>
+          <p className="m-0 fs-14 c-grey">I'm recruiting a group of junior web developers</p>
         </div>
         <div className="btn-shape bg-eee fs-13 label">7 Days Ago</div>
       </div>

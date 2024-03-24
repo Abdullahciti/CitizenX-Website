@@ -487,6 +487,9 @@ ul {
 }
 /* End Tickets */
 /* Start Latest News */
+.latest-news > h2 {
+  text-align: start;
+}
 .latest-news .news-row:not(:last-of-type) {
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -531,6 +534,16 @@ ul {
 .tasks .task-row {
   position: relative;
   z-index: 10;
+}
+.tasks .sign {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 20px;
+}
+.tasks .sign:hover {
+  color: var(--main-color);
 }
 .tasks .delete {
   position: relative;

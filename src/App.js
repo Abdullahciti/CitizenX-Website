@@ -74,8 +74,8 @@ function App() {
           />
           {/* End Header */}
           <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/" element={<Dashboard searchValue={searchValue} />} />
+            <Route path="/dashboard" element={<Dashboard searchValue={searchValue} />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/profile" element={<Profile />} />
             <Route
