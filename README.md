@@ -1,5 +1,5 @@
-# [React](https://react.dev/) &middot; [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/react)
-# CitizenX-Website
+# [CitizenX-Website](https://citizen-x-website.vercel.app/) &middot; [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/react) [![HTML version](https://img.shields.io/badge/HTML-5-blue)](https://www.w3.org/TR/html52/) [![CSS version](https://img.shields.io/badge/CSS-3-orange)](https://www.w3.org/Style/CSS/specs.en.html) [![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-1.0-blueviolet)](https://code.visualstudio.com/) [![Motion Framer](https://img.shields.io/badge/Motion%20Framer-3.0-brightgreen)](https://www.framer.com/motion/) [![Font Awesome](https://img.shields.io/badge/Font%20Awesome-5.15.4-blue)](https://fontawesome.com/) [![React Router](https://img.shields.io/badge/React%20Router-6.4.0-red)](https://reactrouter.com/)
+
 
 ## Table of Contents
 
