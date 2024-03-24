@@ -14,11 +14,13 @@ import zip from "./imgs/zip.svg";
 import png from "./imgs/png.svg";
 import psd from "./imgs/psd.svg";
 import txt from "./imgs/txt.svg";
-import teamOne from "./imgs/team-01.jpg";
+import teamOne from "./imgs/team-01.png";
 import teamTwo from "./imgs/team-02.jpg";
+import teamTwoo from "./imgs/team-02.png";
 import teamThree from "./imgs/team-03.jpg";
-import teamFour from "./imgs/team-04.jpg";
+import teamFour from "./imgs/team-04.png";
 import teamFive from "./imgs/team-05.png";
+import teamFivee from "./imgs/team-05 (1).png";
 import teamSix from "./imgs/team-06.png";
 import teamEight from "./imgs/team-08.jpg";
 import htmlCss from "./imgs/Html & css.png";
@@ -64,9 +66,11 @@ export {
   txt,
   teamOne,
   teamTwo,
+  teamTwoo,
   teamThree,
   teamFour,
   teamFive,
+  teamFivee,
   teamSix,
   teamEight,
   htmlCss,

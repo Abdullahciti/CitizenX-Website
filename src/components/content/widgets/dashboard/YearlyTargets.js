@@ -1,4 +1,4 @@
-const Targets = () => {
+const YearlyTargets = () => {
   return (
     <div className="targets p-20 bg-white rad-10">
       <h2 className="mt-0 mb-10">Yearly Targets</h2>
@@ -54,4 +54,4 @@ const Targets = () => {
   );
 };
 
-export default Targets;
+export default YearlyTargets;

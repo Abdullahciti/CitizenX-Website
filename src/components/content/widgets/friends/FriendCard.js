@@ -29,7 +29,8 @@ const FriendCard = ({
           decoding="async"
           className="rad-half mt-10 mb-10 w-100 h-100"
           src={src}
-          alt=""
+          alt={`its ${name} pic`}
+          title={`its ${name} pic`}
         />
         <h4 className="m-0">{name}</h4>
         <p className="c-grey fs-13 mt-5 mb-0">{title}</p>
@@ -52,11 +53,11 @@ const FriendCard = ({
       <div className="info between-flex fs-13">
         <span className="c-grey">Joined {date}</span>
         <div>
-          { !link ? <span className="bg-mainColor c-white btn-shape" to="/profile">
+          { !link ? <span className="bg-mainColor c-white btn-shape">
             Profile
           </span> 
           :
-          <Link className="bg-mainColor c-white btn-shape" to={link}>
+          <Link className="bg-mainColor c-white btn-shape" to={link} title={`its a link to ${link}`}>
             Profile
           </Link>}
           <span className="bg-red c-white btn-shape">

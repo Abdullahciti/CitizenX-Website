@@ -2,15 +2,17 @@
 import { motion } from "framer-motion";
 
 import {
-  teamTwo,
+  teamOne,
   teamEight,
   avatarOne,
   avatarTwo,
   avatarThree,
   avatarFour,
   avatarFive,
-  avatarSix,
   Avatar,
+  teamFour,
+  teamFivee,
+  teamTwoo,
 } from "../../../assets/index.js";
 import FriendCard from "./friends/FriendCard.js";
 import friendsData from "./friends/friendsData.js";
@@ -65,7 +67,7 @@ const Friends = ({ searchValue }) => {
                 link={"/profile"}
               />
               <FriendCard
-                src={avatarSix}
+                src={teamOne}
                 name={"Daniel"}
                 title={"React Developer"}
                 friendsNum={7}
@@ -85,17 +87,17 @@ const Friends = ({ searchValue }) => {
                 date={"02/15/2024"}
               />
               <FriendCard
-                src={avatarFive}
+                src={teamFivee}
                 name={"Emily"}
                 title={"Frontend Engineer"}
-                friendsNum={5}
+                friendsNum={7}
                 projNum={1}
-                artNum={0}
+                artNum={5}
                 type={""}
                 date={"03/05/2024"}
               />
               <FriendCard
-                src={teamEight}
+                src={teamTwoo}
                 name={"Sophia"}
                 title={"Backend Developer"}
                 friendsNum={8}
@@ -105,7 +107,7 @@ const Friends = ({ searchValue }) => {
                 date={"04/20/2024"}
               />
               <FriendCard
-                src={teamTwo}
+                src={teamOne}
                 name={"Daniel"}
                 title={"React Developer"}
                 friendsNum={7}
@@ -125,7 +127,7 @@ const Friends = ({ searchValue }) => {
                 date={"05/12/2024"}
               />
               <FriendCard
-                src={teamEight}
+                src={teamFivee}
                 name={"Alice"}
                 title={"UI/UX Designer"}
                 friendsNum={8}
@@ -135,7 +137,7 @@ const Friends = ({ searchValue }) => {
                 date={"07/20/2024"}
               />
               <FriendCard
-                src={teamTwo}
+                src={teamOne}
                 name={"Michael"}
                 title={"Software Engineer"}
                 friendsNum={6}
@@ -145,7 +147,7 @@ const Friends = ({ searchValue }) => {
                 date={"12/01/2024"}
               />
               <FriendCard
-                src={teamTwo}
+                src={teamTwoo}
                 name={"Emma"}
                 title={"Product Manager"}
                 friendsNum={9}
@@ -165,7 +167,7 @@ const Friends = ({ searchValue }) => {
                 date={"10/08/2024"}
               />
               <FriendCard
-                src={teamTwo}
+                src={teamOne}
                 name={"Oliver"}
                 title={"Data Scientist"}
                 friendsNum={7}
@@ -175,7 +177,7 @@ const Friends = ({ searchValue }) => {
                 date={"03/15/2024"}
               />
               <FriendCard
-                src={teamTwo}
+                src={teamFour}
                 name={"Ella"}
                 title={"Backend Developer"}
                 friendsNum={8}
@@ -195,7 +197,7 @@ const Friends = ({ searchValue }) => {
                 date={"06/10/2024"}
               />
               <FriendCard
-                src={teamEight}
+                src={teamTwoo}
                 name={"Ava"}
                 title={"Graphic Designer"}
                 friendsNum={7}
@@ -205,7 +207,7 @@ const Friends = ({ searchValue }) => {
                 date={"08/05/2024"}
               />
               <FriendCard
-                src={avatarOne}
+                src={teamFour}
                 name={"Liam"}
                 title={"Software Architect"}
                 friendsNum={6}
@@ -215,7 +217,7 @@ const Friends = ({ searchValue }) => {
                 date={"09/18/2024"}
               />
               <FriendCard
-                src={teamEight}
+                src={teamFivee}
                 name={"Mia"}
                 title={"Frontend Developer"}
                 friendsNum={9}
@@ -315,7 +317,7 @@ const Friends = ({ searchValue }) => {
                 date={"04/01/2024"}
               />
               <FriendCard
-                src={avatarSix}
+                src={teamOne}
                 name={"Chloe"}
                 title={"Frontend Developer"}
                 friendsNum={8}
