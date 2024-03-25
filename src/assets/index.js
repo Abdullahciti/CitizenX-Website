@@ -39,7 +39,7 @@ import newsFour from "./imgs/news-04.avif";
 import activityOne from "./imgs/activity-01.avif";
 import activityTwo from "./imgs/activity-02.avif";
 import activityThree from "./imgs/activity-03.avif";
-import galleryOne from "./imgs/gallery-01.avif"
+import galleryOne from "./imgs/gallery-01.avif";
 import project from "./imgs/project.avif";
 
 export {
