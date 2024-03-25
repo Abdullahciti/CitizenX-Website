@@ -1,11 +1,11 @@
-import welcome from "./imgs/welcome.png";
-import Avatar from "./imgs/Capture.PNG";
-import avatarOne from "./imgs/avatar-01.png";
-import avatarTwo from "./imgs/avatar-02.png";
-import avatarThree from "./imgs/avatar-03.png";
-import avatarFour from "./imgs/avatar-04.png";
-import avatarFive from "./imgs/avatar-05.png";
-import avatarSix from "./imgs/avatar-06.png";
+import welcome from "./imgs/welcome.avif";
+import Avatar from "./imgs/Capture.avif";
+import avatarOne from "./imgs/avatar-01.avif";
+import avatarTwo from "./imgs/avatar-02.avif";
+import avatarThree from "./imgs/avatar-03.avif";
+import avatarFour from "./imgs/avatar-04.avif";
+import avatarFive from "./imgs/avatar-05.avif";
+import avatarSix from "./imgs/avatar-06.avif";
 import avi from "./imgs/avi.svg";
 import dll from "./imgs/dll.svg";
 import pdf from "./imgs/pdf.svg";
@@ -14,34 +14,33 @@ import zip from "./imgs/zip.svg";
 import png from "./imgs/png.svg";
 import psd from "./imgs/psd.svg";
 import txt from "./imgs/txt.svg";
-import teamOne from "./imgs/team-01.png";
-import teamTwo from "./imgs/team-02.jpg";
-import teamTwoo from "./imgs/team-02.png";
-import teamThree from "./imgs/team-03.jpg";
-import teamFour from "./imgs/team-04.png";
-import teamFive from "./imgs/team-05.png";
-import teamFivee from "./imgs/team-05 (1).png";
-import teamSix from "./imgs/team-06.png";
-import teamEight from "./imgs/team-08.jpg";
-import htmlCss from "./imgs/Html & css.png";
-import germanCourse from "./imgs/German-Course.png";
-import backendCourse from "./imgs/Backend-Course.png";
-import reactCourse from "./imgs/React.png";
-import VueCourse from "./imgs/vue-Course.png";
-import courseOne from "./imgs/course-01.jpg";
-import courseTwo from "./imgs/course-02.jpg";
-import courseThree from "./imgs/course-03.jpg";
-import courseFour from "./imgs/course-04.jpg";
-import courseFive from "./imgs/course-05.jpg";
-import newsOne from "./imgs/news-01.png";
-import newsTwo from "./imgs/news-02.png";
-import newsThree from "./imgs/news-03.png";
-import newsFour from "./imgs/news-04.png";
-import activityOne from "./imgs/activity-01.png";
-import activityTwo from "./imgs/activity-02.png";
-import activityThree from "./imgs/activity-03.png";
-import galleryOne from "./imgs/gallery-01.png"
-import project from "./imgs/project.png";
+import teamOne from "./imgs/team-01.avif";
+import teamTwo from "./imgs/team-02.avif";
+import teamTwoo from "./imgs/team-02.avif";
+import teamThree from "./imgs/team-03.avif";
+import teamFour from "./imgs/team-04.avif";
+import teamFive from "./imgs/team-05.avif";
+import teamFivee from "./imgs/team-05 (1).avif";
+import teamEight from "./imgs/team-04.avif";
+import htmlCss from "./imgs/Html & css.avif";
+import germanCourse from "./imgs/German-Course.avif";
+import backendCourse from "./imgs/Backend-Course.avif";
+import reactCourse from "./imgs/React.avif";
+import VueCourse from "./imgs/vue-Course.avif";
+import courseOne from "./imgs/course-01.avif";
+import courseTwo from "./imgs/course-02.avif";
+import courseThree from "./imgs/course-03.avif";
+import courseFour from "./imgs/course-04.avif";
+import courseFive from "./imgs/course-05.avif";
+import newsOne from "./imgs/news-01.avif";
+import newsTwo from "./imgs/news-02.avif";
+import newsThree from "./imgs/news-03.avif";
+import newsFour from "./imgs/news-04.avif";
+import activityOne from "./imgs/activity-01.avif";
+import activityTwo from "./imgs/activity-02.avif";
+import activityThree from "./imgs/activity-03.avif";
+import galleryOne from "./imgs/gallery-01.avif"
+import project from "./imgs/project.avif";
 
 export {
   welcome,
@@ -71,7 +70,6 @@ export {
   teamFour,
   teamFive,
   teamFivee,
-  teamSix,
   teamEight,
   htmlCss,
   germanCourse,

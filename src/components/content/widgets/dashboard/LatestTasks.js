@@ -20,7 +20,7 @@ const LatestTasks = ({ handleTasks }) => {
       <h2 className="mt-0 mb-20">Latest Tasks</h2>
       <div className="tasks-container" onClick={(e) => handleLength(e)}>
         <TaskCard
-          title={"Aplly to a job"}
+          title={"Applying for a job"}
           desc={
             "I'm looking forward to finding a job to start my new amazing career where I'd like to work."
           }
