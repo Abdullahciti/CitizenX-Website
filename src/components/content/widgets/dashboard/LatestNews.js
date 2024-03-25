@@ -2,7 +2,7 @@ import { newsFour, newsOne, newsThree, newsTwo } from "../../../../assets";
 
 const LatestNews = () => {
   return (
-    <div className="latest-news p-20 bg-white rad-10 txt-c-mobile">
+    <div className="latest-news p-20 bg-mainMode rad-10 txt-c-mobile">
       <h2 className="mt-0 mb-20">Latest News</h2>
       <div className="news-row d-flex align-center">
         <img decoding="async" src={newsOne} alt="" />

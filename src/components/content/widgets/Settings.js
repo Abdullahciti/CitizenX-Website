@@ -12,15 +12,15 @@ const Settings = () => {
   return (
     <div className="settings">
       <div className="content w-full">
-      <motion.div
+        <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1  }}
-          transition={{ duration:0.6 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
         >
           <h1 className="p-relative">Settings</h1>
           <div className="settings-page m-20 d-grid gap-20">
             {/* <!-- Start Settings Box --> */}
-            <div className="p-20 bg-white rad-10">
+            <div className="p-20 bg-mainMode rad-10">
               <h2 className="mt-0 mb-10">Site Control</h2>
               <p className="mt-0 mb-20 c-grey fs-15">
                 Control The Website If There Is Maintenance

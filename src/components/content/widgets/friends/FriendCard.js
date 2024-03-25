@@ -15,7 +15,7 @@ const FriendCard = ({
   link
 }) => {
   return (
-    <div className="friend bg-white rad-6 p-20 p-relative">
+    <div className="friend bg-mainMode rad-6 p-20 p-relative">
       <div className="contact">
         <i className="">
           <IoIosCall />

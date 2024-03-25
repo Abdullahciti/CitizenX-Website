@@ -1,6 +1,6 @@
 const SkillsCard = () => {
   return (
-    <div className="skills-card p-20 bg-white rad-10 mt-20">
+    <div className="skills-card p-20 bg-mainMode rad-10 mt-20">
       <h2 className="mt-0 mb-10">My Skills</h2>
       <p className="mt-0 mb-20 c-grey fs-15">Complete Skills List</p>
       <ul className="m-0 txt-c-mobile">

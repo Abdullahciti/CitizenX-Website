@@ -1,6 +1,6 @@
 const ProjectCard = ({ date, srcLink, title, desc, src, lvl, skills, price }) => {
   return (
-    <div className="project bg-white p-20 rad-6 p-relative">
+    <div className="project bg-mainMode p-20 rad-6 p-relative">
       <span className="date fs-13 c-grey">{date}</span>
       <a
         href={srcLink}

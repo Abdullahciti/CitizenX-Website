@@ -1,6 +1,6 @@
 const YearlyTargets = () => {
   return (
-    <div className="targets p-20 bg-white rad-10">
+    <div className="targets p-20 bg-mainMode rad-10">
       <h2 className="mt-0 mb-10">Yearly Targets</h2>
       <p className="mt-0 mb-20 c-grey fs-15">Targets Of The Year</p>
       <div className="target-row mb-20 blue center-flex">

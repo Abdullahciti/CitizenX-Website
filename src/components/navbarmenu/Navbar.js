@@ -14,7 +14,7 @@ import { MdOutlinePayments } from "react-icons/md";
 
 const Navbar = ({ handleActive }) => {
   return (
-    <div className="navbar bg-white p-20 p-fixed">
+    <div className="navbar bg-mainMode p-20 p-fixed">
       <Link className="link" to="/">
         <h3 className="p-relative txt-c mt-0">TopC</h3>
       </Link>

@@ -51,7 +51,7 @@ const QuickDraft = () => {
   };
 
   return (
-    <div className="quick-draft p-20 bg-white rad-10">
+    <div className="quick-draft p-20 bg-mainMode rad-10">
       <h2 className="mt-0 mb-10">Quick Draft</h2>
       <p className="mt-0 mb-20 c-grey fs-15">Write me a draft for new ideas</p>
       {draft ? (

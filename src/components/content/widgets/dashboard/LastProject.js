@@ -1,6 +1,6 @@
 const LastProject = () => {
   return (
-    <div className="last-project p-20 bg-white rad-10 p-relative">
+    <div className="last-project p-20 bg-mainMode rad-10 p-relative">
       <h2 className="mt-0 mb-20">Last Project Progress</h2>
       <ul className="m-0 p-relative">
         <li className="mt-25 d-flex align-center done">Got The Project</li>

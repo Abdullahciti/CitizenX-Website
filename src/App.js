@@ -51,18 +51,12 @@ function App() {
         {/*  End Navbar */}
         {/* <Dashboard /> */}
         <div className="main">
-          {/* <motion.div
-               initial={{ opacity: 0 }}
-               animate={{ opacity: 1 }}
-               transition={{ duration: 0.6 }}
-             > */}
           <div className="mob-menu">
             <NavbarMobile
               menu={menu}
               handleMenu={() => setMenu((prev) => !prev)}
             />
           </div>
-          {/* </motion.div> */}
 
           {/* Start Header */}
           <Header
@@ -75,7 +69,10 @@ function App() {
           {/* End Header */}
           <Routes>
             <Route path="/" element={<Dashboard searchValue={searchValue} />} />
-            <Route path="/dashboard" element={<Dashboard searchValue={searchValue} />} />
+            <Route
+              path="/dashboard"
+              element={<Dashboard searchValue={searchValue} />}
+            />
             <Route path="/settings" element={<Settings />} />
             <Route path="/profile" element={<Profile />} />
             <Route

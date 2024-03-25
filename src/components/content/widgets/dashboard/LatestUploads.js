@@ -2,7 +2,7 @@ import { avi, dll, pdf, psd, txt } from "../../../../assets";
 
 const LatestUploads = () => {
     return ( 
-        <div className="latest-uploads p-20 bg-white rad-10">
+        <div className="latest-uploads p-20 bg-mainMode rad-10">
               <h2 className="mt-0 mb-20">Latest Uploads</h2>
               <ul className="m-0">
                 <li className="between-flex pb-10 mb-10">

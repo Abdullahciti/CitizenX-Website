@@ -1,6 +1,6 @@
 const TicketsStatistics = () => {
   return (
-    <div className="tickets p-20 bg-white rad-10">
+    <div className="tickets p-20 bg-mainMode rad-10">
       <h2 className="mt-0 mb-10">Tickets Statistics</h2>
       <p className="mt-0 mb-20 c-grey fs-15">
         Everything About Support Tickets

@@ -8,7 +8,7 @@ import {
 
 const ProjectsTable = () => {
   return (
-    <div className="projects p-20 bg-white rad-10">
+    <div className="projects p-20 bg-mainMode rad-10">
       <h2 className="mt-0 mb-20">Projects</h2>
       <div className="responsive-table">
         <table className="fs-15 w-full">

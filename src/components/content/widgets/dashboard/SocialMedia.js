@@ -6,7 +6,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 
 const SocialMedia = () => {
     return ( 
-        <div className="social-media p-20 bg-white rad-10 p-relative">
+        <div className="social-media p-20 bg-mainMode rad-10 p-relative">
               <h2 className="mt-0 mb-25">Social Media Stats</h2>
               <div className="box twitter p-15 p-relative mb-10 between-flex">
                 <FaSquareXTwitter />

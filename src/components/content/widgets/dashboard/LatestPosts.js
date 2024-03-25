@@ -2,7 +2,7 @@ import { Avatar } from "../../../../assets";
 
 const LatestPosts = () => {
   return (
-    <div className="latest-post p-20 bg-white rad-10 p-relative">
+    <div className="latest-post p-20 bg-mainMode rad-10 p-relative">
       <h2 className="mt-0 mb-25">Latest Post</h2>
       <div className="top d-flex align-center">
         <a href="#1">

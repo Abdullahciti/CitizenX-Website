@@ -16,7 +16,7 @@ const LatestTasks = ({ handleTasks }) => {
   };
 
   return (
-    <div className="tasks p-20 bg-white rad-10">
+    <div className="tasks p-20 bg-mainMode rad-10">
       <h2 className="mt-0 mb-20">Latest Tasks</h2>
       <div className="tasks-container" onClick={(e) => handleLength(e)}>
         <TaskCard

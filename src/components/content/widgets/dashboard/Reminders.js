@@ -1,6 +1,6 @@
 const Reminders = () => {
   return (
-    <div className="reminders p-20 bg-white rad-10 p-relative">
+    <div className="reminders p-20 bg-mainMode rad-10 p-relative">
       <h2 className="mt-0 mb-25">Reminders</h2>
       <ul className="m-0">
         <li className="d-flex align-center mt-15">

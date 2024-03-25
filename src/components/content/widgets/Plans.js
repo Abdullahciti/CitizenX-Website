@@ -1,5 +1,6 @@
 // Motion to improve ux
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Plans = () => {
   return (
@@ -13,7 +14,7 @@ const Plans = () => {
         >
           <h1 className="p-relative">Plans</h1>
           <div className="plans-page d-grid m-20 gap-20">
-            <div className="plan green bg-white p-20">
+            <div className="plan green bg-mainMode p-20">
               <div className="top bg-green txt-c p-20">
                 <h2 className="m-0 c-white">Free</h2>
                 <div className="price c-white">
@@ -68,12 +69,12 @@ const Plans = () => {
                 </li>
               </ul>
               <div className="join center-flex">
-                <a
-                  href="#1"
+                <Link
+                  to="/plans/free-plan"
                   className="btn-shape bg-green c-white d-block w-fit"
                 >
                   Join
-                </a>
+                </Link>
               </div>
             </div>
             {/* <!-- Start Plan --> */}
@@ -132,12 +133,12 @@ const Plans = () => {
                 </li>
               </ul>
               <div className="join center-flex">
-                <a
-                  href="#1"
+                <Link
+                  to="/plans/basic-plan"
                   className="btn-shape bg-mainColor c-white d-block w-fit"
                 >
                   Join
-                </a>
+                </Link>
               </div>
             </div>
             {/* <!-- End Plan -->

@@ -3,8 +3,8 @@ import { Avatar, welcome } from "../../../../assets";
 
 const Welcome = () => {
   return (
-    <div className="welcome bg-white rad-10 txt-c-mobile block-mobile">
-      <div className="intro p-20 d-flex space-between bg-eee">
+    <div className="welcome bg-mainMode rad-10 txt-c-mobile block-mobile">
+      <div className="intro p-20 d-flex space-between bg-mainMode">
         <div>
           <h2 className="m-0">Welcome</h2>
           <p className="c-grey mt-5">TopC</p>

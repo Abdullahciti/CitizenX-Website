@@ -10,7 +10,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 :root {
-  /* --main-color: #0075ff; 
+  /* --main-color: #5c6bc0; Friendly purple 
+  --alt-color: #9575cd; Lighter shade of purple 
+  --accent-color: #7e57c2; Deeper shade of purple 
+  --grey-color: #9e9e9e;  Soft grey 
+  --highlight-color: #ffcc80; Soft orange 
+  --accent-green-color: #4db6ac; Tranquil teal 
+  --main-color: #0075ff; 
   --alt-color: #0d69d5; 
   --orange-color: #f59e0b;
   --green-color: #22c55e;
@@ -210,10 +216,10 @@ ul {
 .content {
   overflow: hidden;
 }
-.head {
+.header {
   z-index: 10;
 }
-.head .menu-icon {
+.header .menu-icon {
   display: none;
   left: 18px;
   font-size: 25px;
@@ -222,10 +228,10 @@ ul {
   line-height: 1.8;
   transition: var(--main-transition);
 }
-.head .search {
+.header .search {
   margin-left: 0;
 }
-.head .search svg {
+.header .search svg {
   font-weight: 900;
   position: absolute;
   left: 15px;
@@ -234,7 +240,7 @@ ul {
   font-size: 14px;
   color: var(--grey-color);
 }
-.head .search input {
+.header .search input {
   border: 1px solid #ccc;
   border-radius: 10px;
   margin-left: 5px;
@@ -242,59 +248,83 @@ ul {
   width: 160px;
   transition: width 0.3s;
 }
-
 @media (max-width: 375px) {
   .icons {
     /* width: 100%;
     justify-content: space-between; */
     margin-left: auto;
   }
-  .head .search {
+  .header .search {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  .head .search {
+  .header .search {
     margin-left: 35px;
   }
-  .head .menu-icon {
+  .header .menu-icon {
     display: block;
     z-index: 20;
   }
-  .head .menu-icon:hover,
-  .head .menu-icon.active {
+  .header .menu-icon:hover,
+  .header .menu-icon.active {
     color: var(--main-color);
   }
 }
-.head .search input:focus {
+.header .search input:focus {
   width: 200px;
 }
-.head .search input:focus::placeholder {
+.header .search input:focus::placeholder {
   opacity: 0.5;
   transition: all 0.5s;
 }
-.head .icons .fa-bell {
-  cursor: pointer;
+.header .icons {
+  gap: 25px;
 }
-.head .icons .active .notification {
-  display: none;
+.header .icons > svg {
+  color: var(--main-color);
+  font-size: 24px;
 }
-.head .icons .notification::before {
-  content: "";
+.header .mode-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: var(--red-color);
-  border-radius: 50%;
-  right: 50%;
-  top: 50%;
+  background: var(--main-color);
+  color: white;
+  width: 100px;
+  padding: 5px 0;
+  border-radius: 7px;
+  top: 55px;
+  right: 50px;
+  transition: var(--main-transition);
+  opacity: 0;
+  z-index: -10;
 }
-.head .icons img {
+.header .mode-picker.active {
+  z-index: 10;
+  top: 60;
+  opacity: 1;
+}
+.header .mode-picker li {
+  display: flex;
+  gap: 3px;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 5px;
+}
+.header .mode-picker li:hover {
+  background: var(--grey-color);
+}
+.header .mode-picker li svg {
+  margin: 0 3px;
+}
+.header .icons img {
   width: 32px;
   height: 32px;
-  margin-left: 15px;
+  transition: all 0.25s ease-in-out;
 }
-.head .icons a img:hover {
+.header .icons a img:hover {
   transform: scale(1.111);
 }
 .page h1 {
@@ -700,7 +730,7 @@ ul {
   border-spacing: 0;
   min-width: 1000px;
 }
-.projects thead td {
+.projects theader td {
   background-color: #eee;
   font-weight: bold;
 }
@@ -756,11 +786,34 @@ ul {
 .settings-page .sec-box {
   padding-bottom: 15px;
 }
+.settings-page .sec-box .left,
+.settings-page .sec-box .right {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
 .settings-page .sec-box:not(:last-of-type) {
   border-bottom: 1px solid #eee;
 }
-.settings-page .sec-box .button {
+.settings-page .sec-box button {
   transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+.settings-page .sec-box .pass {
+  width: 100%;
+  position: relative;
+}
+.settings-page .sec-box .pass input {
+  padding: 5px;
+}
+.settings-page .sec-box .pass svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .settings-page .sec-box .button:hover {
   background-color: var(--alt-color);

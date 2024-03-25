@@ -15,7 +15,7 @@ const NavbarMobile = ({ menu, handleMenu }) => {
   return (
     // {/* <PiBellRingingBold /> */}
     <div
-      className={menu ? "navbar active bg-white p-20" : "navbar bg-white p-20"}
+      className={menu ? "navbar active bg-mainMode p-20" : "navbar bg-mainMode p-20"}
     >
       <div className="menu-icon p-absolute" onClick={handleMenu}>
         X

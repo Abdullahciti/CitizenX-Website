@@ -3,7 +3,7 @@ import { SiGithub } from "react-icons/si";
 
 const Overview = () => {
   return (
-    <div className="overview bg-white rad-10 d-flex align-center">
+    <div className="overview bg-mainMode rad-10 d-flex align-center">
       <div className="avatar-box txt-c p-20 m-20">
         <img decoding="async" className="rad-half mb-10" src={Avatar} alt="" />
         <h3 className="m-0">Abdullah Arafa</h3>

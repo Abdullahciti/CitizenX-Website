@@ -2,7 +2,7 @@ import { activityOne, activityThree, activityTwo, project } from "../../../../as
 
 const Activity = () => {
   return (
-    <div className="activities p-20 bg-white rad-10 mt-20">
+    <div className="activities p-20 bg-mainMode rad-10 mt-20">
       <h2 className="mt-0 mb-10">Latest Activities</h2>
       <p className="mt-0 mb-20 c-grey fs-15">
         Latest Activities Done By The User
