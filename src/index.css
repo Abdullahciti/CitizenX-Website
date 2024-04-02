@@ -42,9 +42,6 @@ ul {
   background-color: white;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
-}
-::-webkit-scrollbar-thumb:hover {
   background-color: var(--alt-color);
 }
 .page {
@@ -282,8 +279,12 @@ ul {
   gap: 25px;
 }
 .header .icons > svg {
-  color: var(--main-color);
+  color: var(--alt-color);
   font-size: 24px;
+  cursor: pointer;
+}
+.header .icons > svg:hover {
+  color: var(--main-color);
 }
 .header .mode-picker {
   display: flex;
@@ -312,9 +313,10 @@ ul {
   font-size: 22px;
   font-weight: 500;
   padding: 5px;
+  cursor: pointer;
 }
 .header .mode-picker li:hover {
-  background: var(--grey-color);
+  background: var(--alt-color);
 }
 .header .mode-picker li svg {
   margin: 0 3px;
@@ -1004,6 +1006,9 @@ ul {
     border-right: 1px solid #eee;
   }
 }
+.overview p:last-of-type {
+  margin-bottom: 12px;
+}
 .profile-page .avatar-box > img {
   width: 120px;
   height: 120px;
@@ -1032,6 +1037,7 @@ ul {
 }
 .profile-page .avatar-box .github-link {
   position: relative;
+  margin: 10px 0;
 }
 .profile-page .avatar-box .github-link a {
   font-size: 30px;
@@ -1043,8 +1049,13 @@ ul {
   transform: translateX(-50%);
   color: var(--alt-color);
   transition: var(--main-transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.profile-page .avatar-box .github-link a svg {
+  width: fit-content;
+} 
 .profile-page .avatar-box .github-link:hover {
   color: var(--main-color);
 }

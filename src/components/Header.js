@@ -28,9 +28,9 @@ const Header = ({ handleMenu, handleSearchChange }) => {
   };
   const handleDarkicon = () => {
     // Dark mode
-    // root.style.setProperty("--main-modeColor", "#000"); // black color for backgrounds
+    root.style.setProperty("--main-modeColor", "#000"); // black color for backgrounds
     root.style.setProperty("--main-color", "#263238"); // Dark blue-grey
-    // root.style.setProperty("--alt-color", "#263299"); // Dark orange
+    root.style.setProperty("--alt-color", "#263299"); // Dark orange
     // root.style.setProperty("--orange-color", "#651fff"); // Deep purple
     root.style.setProperty("--green-color", "#00c853"); // Dark green
     root.style.setProperty("--red-color", "#d50000"); // Dark red

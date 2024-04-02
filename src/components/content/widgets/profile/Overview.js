@@ -24,7 +24,7 @@ const Overview = () => {
           <i className="fa-solid fa-star c-orange fs-13"></i>
           <i className="fa-solid fa-star c-orange fs-13"></i>
         </div>
-        <p className="c-grey m-0 fs-13">Full-Time</p>
+        <p className="c-grey m-0 fs-13">Software-Engineer</p>
         <span className="github-link">
           <a
             href="https://github.com/Abdullahciti?tab=repositories"
@@ -73,7 +73,7 @@ const Overview = () => {
           </div>
           <div className="fs-14">
             <span className="c-grey">Phone:</span>
-            <span> 01635345412</span>
+            <span> +491702390457</span>
           </div>
           <div className="fs-14">
             <span className="c-grey">Date Of Birth:</span>
