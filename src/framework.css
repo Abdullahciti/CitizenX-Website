@@ -1,14 +1,10 @@
 :root {
   --main-modeColor: white;
-  --main-color: #5c6bc0; /* Friendly purple */
-  /* --alt-color: #be0dd5; */
-  /* --orange-color: #f59e0b; */
-  /* --green-color: #22c55e; */
-  /* --accent-color: #2962ff; Light blue */
+  --main-color: #5c6bc0;
+  --alt-color: #9575cd; /* Lighter shade of purple */
   --red-color: #f44336;
   --grey-color: #888;
   --text-color: black;
-  --alt-color: #9575cd; /* Lighter shade of purple */
   --accent-color: #7e57c2; /* Deeper shade of purple */
   --orange-color: #ffcc80; /* Soft orange */
   --green-color: #4db6ac; /* Tranquil teal */

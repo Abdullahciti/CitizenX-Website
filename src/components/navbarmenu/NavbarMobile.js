@@ -21,7 +21,7 @@ const NavbarMobile = ({ menu, handleMenu }) => {
         X
       </div>
       <Link className="link" to="/">
-        <h3 className="p-relative txt-c mt-0">TopC</h3>
+        <h3 className="p-relative txt-c mt-0">CitizenX Gallery</h3>
       </Link>
       <ul>
         <li>

@@ -7,7 +7,7 @@ const Welcome = () => {
       <div className="intro p-20 d-flex space-between bg-mainMode">
         <div>
           <h2 className="m-0">Welcome</h2>
-          <p className="c-grey mt-5">TopC</p>
+          <p className="c-grey mt-5">CitizenX Gallery</p>
         </div>
         <img decoding="async" className="hide-mobile" src={welcome} alt="" />
       </div>
@@ -23,7 +23,7 @@ const Welcome = () => {
           14 <span className="d-block c-grey fs-14 mt-10">Projects</span>
         </div>
         <div>
-          $---- <span className="d-block c-grey fs-14 mt-10">Earned</span>
+          $30k <span className="d-block c-grey fs-14 mt-10">Earned</span>
         </div>
       </div>
       <Link

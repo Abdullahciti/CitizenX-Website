@@ -8,34 +8,14 @@ import { LuSun } from "react-icons/lu";
 import { useState } from "react";
 
 const Header = ({ handleMenu, handleSearchChange }) => {
-  // const [dark, setDark] = useState(false);
   const [mode, setMode] = useState("light");
   const [modePick, setModePick] = useState(false);
-  const root = document.documentElement;
 
   const handleLighticon = () => {
-    // light mode
-    root.style.setProperty("--main-modeColor", "#fff"); // white color for backgrounds
-    root.style.setProperty("--main-color", "#5c6bc0");
-    root.style.setProperty("--alt-color", "#9575cd");
-    root.style.setProperty("--orange-color", "#ffcc80");
-    root.style.setProperty("--green-color", "#4db6ac");
-    root.style.setProperty(" --red-color", "#f44336");
-    root.style.setProperty("--grey-color", "#9e9e9e");
-    // root.style.setProperty("--text-color", "#000");
     setMode("light");
     setModePick(false);
   };
   const handleDarkicon = () => {
-    // Dark mode
-    root.style.setProperty("--main-modeColor", "#000"); // black color for backgrounds
-    root.style.setProperty("--main-color", "#263238"); // Dark blue-grey
-    root.style.setProperty("--alt-color", "#263299"); // Dark orange
-    // root.style.setProperty("--orange-color", "#651fff"); // Deep purple
-    root.style.setProperty("--green-color", "#00c853"); // Dark green
-    root.style.setProperty("--red-color", "#d50000"); // Dark red
-    root.style.setProperty("--grey-color", "#bdbdbd"); // Light grey
-    // root.style.setProperty("--text-color", "#fff");
     setMode("dark");
     setModePick(false);
   };
@@ -60,13 +40,20 @@ const Header = ({ handleMenu, handleSearchChange }) => {
         ) : (
           <BsMoonStars onClick={(e) => setModePick((prev) => !prev)} />
         )}
-        <ul className={modePick ? "mode-picker active" : "mode-picker"}>
+        <ul
+          onBlur={() => {
+            setModePick(false);
+          }}
+          className={modePick ? "mode-picker active" : "mode-picker"}
+        >
           <li className="light" onClick={handleLighticon}>
             <LuSun /> <span>light</span>
           </li>
           <li className="dark" onClick={handleDarkicon}>
             <BsMoonStars />
-            <span>dark</span>
+            <span title="Please note that this feature is currently undergoing development.">
+              dark
+            </span>
           </li>
         </ul>
         <Link to="/profile">

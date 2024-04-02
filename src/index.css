@@ -10,18 +10,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 :root {
-  /* --main-color: #5c6bc0; Friendly purple 
-  --alt-color: #9575cd; Lighter shade of purple 
-  --accent-color: #7e57c2; Deeper shade of purple 
-  --grey-color: #9e9e9e;  Soft grey 
-  --highlight-color: #ffcc80; Soft orange 
-  --accent-green-color: #4db6ac; Tranquil teal 
-  --main-color: #0075ff; 
-  --alt-color: #0d69d5; 
-  --orange-color: #f59e0b;
-  --green-color: #22c55e;
-  --red-color: #f44336;
-  --grey-color: #333; */
   --main-transition: all 0.4s ease;
 }
 *:focus {
@@ -175,17 +163,19 @@ ul {
   .page .main .mob-menu h3 {
     width: fit-content;
     margin: 0 auto;
+    font-size: 15px;
   }
   .page .main .mob-menu {
     display: block;
   }
   .page .main .mob-menu .menu-icon {
-    right: 15px;
+    right: 12px;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: var(--main-transition);
-  }
+    top: 15px;
+}
   .page .main .mob-menu .menu-icon:hover {
     color: var(--red-color);
   }
@@ -1047,7 +1037,7 @@ ul {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  color: var(--alt-color);
+  color: var(--main-color);
   transition: var(--main-transition);
   display: flex;
   justify-content: center;
@@ -1063,9 +1053,6 @@ ul {
   flex-wrap: wrap;
   border-bottom: 1px solid #eee;
   transition: 0.3s;
-}
-.profile-page .info-box .box:hover {
-  background-color: #f9f9f9;
 }
 .profile-page .info-box .box > div {
   min-width: 250px;
