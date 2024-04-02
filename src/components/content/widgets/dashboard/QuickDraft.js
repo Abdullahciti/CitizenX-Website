@@ -7,15 +7,18 @@ const QuickDraft = () => {
   const [thought, setThought] = useState("");
 
   // Start Validation here
-  const [errClientName, setErrClientName] = useState(false)
+  const [errClientName, setErrClientName] = useState(false);
   const [errtitle, setErrTitle] = useState(false);
   const [errThought, setErrThought] = useState(false);
 
   const [draft, setDraft] = useState(true);
 
   const handleClientName = (e) => {
-    setClientName(e.target.value)
-  } 
+    setClientName(e.target.value);
+    setErrClientName(false);
+    setErrThought(false);
+    setErrThought(false);
+  };
   const handleTitle = (e) => {
     setTitle(e.target.value);
   };
@@ -26,7 +29,7 @@ const QuickDraft = () => {
   const handleSave = (e) => {
     e.preventDefault();
     if (!clientName) {
-      setErrClientName(true)
+      setErrClientName(true);
     }
     if (!title) {
       setErrTitle(true);
