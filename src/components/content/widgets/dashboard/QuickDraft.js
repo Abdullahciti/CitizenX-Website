@@ -16,14 +16,14 @@ const QuickDraft = () => {
   const handleClientName = (e) => {
     setClientName(e.target.value);
     setErrClientName(false);
-    setErrThought(false);
-    setErrThought(false);
   };
   const handleTitle = (e) => {
     setTitle(e.target.value);
+    setErrTitle(false);
   };
   const handleThought = (e) => {
     setThought(e.target.value);
+    setErrThought(false);
   };
 
   const handleSave = (e) => {
