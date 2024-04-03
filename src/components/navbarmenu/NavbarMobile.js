@@ -10,14 +10,32 @@ import { SiCoursera } from "react-icons/si";
 import { LuFileSearch } from "react-icons/lu";
 import { MdOutlinePayments } from "react-icons/md";
 import handleActive from "../../functions/handleActive";
+import { useEffect, useRef } from "react";
 
-const NavbarMobile = ({ menu, handleMenu }) => {
+const NavbarMobile = ({ menu, closeMenu }) => {
+  const windowRef = useRef(null);
+  const handleClickOutside = (event) => {
+    if (windowRef.current && !windowRef.current.contains(event.target)) {
+      closeMenu();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  });
+
   return (
     // {/* <PiBellRingingBold /> */}
     <div
-      className={menu ? "navbar active bg-mainMode p-20" : "navbar bg-mainMode p-20"}
+      ref={windowRef}
+      className={
+        menu ? "navbar active bg-mainMode p-20" : "navbar bg-mainMode p-20"
+      }
     >
-      <div className="menu-icon p-absolute" onClick={handleMenu}>
+      <div className="menu-icon p-absolute" onClick={closeMenu}>
         X
       </div>
       <Link className="link" to="/">

@@ -27,6 +27,7 @@ import Plans from "./components/content/widgets/Plans";
 // Components
 import Header from "./components/Header";
 import NavbarMobile from "./components/navbarmenu/NavbarMobile";
+import DearUser from "./components/DearUser";
 
 // Motion
 // import { motion } from "framer-motion";
@@ -54,14 +55,14 @@ function App() {
           <div className="mob-menu">
             <NavbarMobile
               menu={menu}
-              handleMenu={() => setMenu((prev) => !prev)}
+              closeMenu={() => setMenu(false)}
             />
           </div>
 
           {/* Start Header */}
           <Header
             menu={menu}
-            handleMenu={() => setMenu((prev) => !prev)}
+            openMenu={() => setMenu(true)}
             handleSearchChange={(e) =>
               setSearchValue((searchValue) => e.target.value)
             }
@@ -92,6 +93,7 @@ function App() {
               element={<Files searchValue={searchValue} />}
             />
             <Route path="/plans" element={<Plans />} />
+            <Route path="*" element={<DearUser />} />
           </Routes>
         </div>
       </div>

@@ -5,11 +5,12 @@ import { Avatar } from "../assets";
 import { FaSearch, FaBars } from "react-icons/fa";
 import { BsMoonStars } from "react-icons/bs";
 import { LuSun } from "react-icons/lu";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-const Header = ({ handleMenu, handleSearchChange }) => {
+const Header = ({ openMenu, handleSearchChange }) => {
   const [mode, setMode] = useState("light");
   const [modePick, setModePick] = useState(false);
+  const [message, setMessage] = useState(false);
 
   const handleLighticon = () => {
     setMode("light");
@@ -18,11 +19,37 @@ const Header = ({ handleMenu, handleSearchChange }) => {
   const handleDarkicon = () => {
     setMode("dark");
     setModePick(false);
+    setMessage(true);
   };
+  const windowRef = useRef(null);
+
+   const handleClickOutside = (event) => {
+    if (windowRef.current && !windowRef.current.contains(event.target)) {
+      setMessage(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="header bg-mainMode p-15 between-flex p-relative">
-      <div className="menu-icon p-absolute" onClick={handleMenu}>
+      {message && (
+        
+        <div
+          className="message"
+        >
+          <p ref={windowRef} onBlur={() => setMessage(false)}>
+            Please note that this feature is currently undergoing development.
+            <span onClick={() => setMessage(false)}>x</span>
+          </p>
+        </div>
+      )}
+      <div className="menu-icon p-absolute" onClick={openMenu}>
         <FaBars />
       </div>
       <div className="search p-relative">
@@ -51,9 +78,7 @@ const Header = ({ handleMenu, handleSearchChange }) => {
           </li>
           <li className="dark" onClick={handleDarkicon}>
             <BsMoonStars />
-            <span title="Please note that this feature is currently undergoing development.">
-              dark
-            </span>
+            <span>dark</span>
           </li>
         </ul>
         <Link to="/profile">

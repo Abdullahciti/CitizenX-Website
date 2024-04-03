@@ -27,7 +27,7 @@ const Overview = () => {
         <p className="c-grey m-0 fs-13">Software-Engineer</p>
         <span className="github-link">
           <a
-            href="https://github.com/Abdullahciti?tab=repositories"
+            href="https://github.com/Abdullahciti"
             target="_blank"
             rel="noreferrer"
           >

@@ -53,9 +53,9 @@ const FriendCard = ({
       <div className="info between-flex fs-13">
         <span className="c-grey">Joined {date}</span>
         <div>
-          { !link ? <span className="bg-mainColor c-white btn-shape">
+          { !link ?  <Link className="bg-mainColor c-white btn-shape" to={`/${name}`} title={`its a link to ${link}`}>
             Profile
-          </span> 
+          </Link>
           :
           <Link className="bg-mainColor c-white btn-shape" to={link} title={`its a link to ${link}`}>
             Profile

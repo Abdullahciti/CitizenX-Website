@@ -175,7 +175,7 @@ ul {
     cursor: pointer;
     transition: var(--main-transition);
     top: 15px;
-}
+  }
   .page .main .mob-menu .menu-icon:hover {
     color: var(--red-color);
   }
@@ -205,6 +205,36 @@ ul {
 }
 .header {
   z-index: 10;
+}
+.header .message {
+  position: absolute;
+  background-color: #99999970;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    padding: 100px;
+    background-color: white;
+    position: relative;
+    span {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 24px;
+      color: #474545;
+      font-family: 'Font Awesome 6 Free';
+      cursor: pointer;
+      &:hover {
+        color: var(--red-color);
+        transition: var(--main-transition);
+      }
+    }
+  }
 }
 .header .menu-icon {
   display: none;
@@ -290,9 +320,11 @@ ul {
   right: 50px;
   transition: var(--main-transition);
   opacity: 0;
-  z-index: -10;
+  z-index: -100;
+  pointer-events: none;
 }
 .header .mode-picker.active {
+  pointer-events: initial;
   z-index: 10;
   top: 60;
   opacity: 1;
@@ -353,6 +385,29 @@ ul {
   }
 }
 /* End Content */
+/* Start 404 Page  */
+.dear-user {
+  background: var(--bg-smooth-color);
+  height: calc(100% - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  p {
+    background: white;
+    padding: 25px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    a {
+      width: fit-content;
+      margin: 0px auto;
+      margin-top: 15px;
+    }
+  }
+}
+/* End 404 Page  */
 /* Start Dashboard */
 .dashboard {
   overflow-x: hidden;
@@ -1045,7 +1100,7 @@ ul {
 }
 .profile-page .avatar-box .github-link a svg {
   width: fit-content;
-} 
+}
 .profile-page .avatar-box .github-link:hover {
   color: var(--main-color);
 }
